@@ -68,7 +68,7 @@ void Configuration::setupWifiPortal(String hostName, bool configPortal)
         shouldSave = true;
     }
 
-    if(maxmilliamp.toInt() < 500)
+    if(maxmilliamp.toInt() < 300)
     {
         maxmilliamp = String(LED_MAX_MILLIAMP);
         shouldSave = true;
